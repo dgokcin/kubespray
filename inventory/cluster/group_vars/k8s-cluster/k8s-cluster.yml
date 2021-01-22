@@ -37,7 +37,7 @@ credentials_dir: "{{ inventory_dir }}/credentials"
 
 ## It is possible to activate / deactivate selected authentication methods (oidc, static token auth)
 # kube_oidc_auth: false
-# kube_token_auth: false
+kube_token_auth: true
 
 
 ## Variables for OpenID Connect Configuration https://kubernetes.io/docs/admin/authentication/
@@ -132,7 +132,7 @@ kube_encrypt_secret_data: false
 
 # DNS configuration.
 # Kubernetes cluster name, also will be used as DNS domain
-cluster_name: cluster.local
+cluster_name: cluster.hepsiburada
 # Subdomains of DNS domain to be resolved via /etc/resolv.conf for hostnet pods
 ndots: 2
 # Can be coredns, coredns_dual, manual or none
