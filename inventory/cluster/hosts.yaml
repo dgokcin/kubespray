@@ -10,8 +10,8 @@ all:
       access_ip: 10.106.0.3
     node3:
       ansible_host: 10.106.0.4
-      ip: 10.106.0.3
-      access_ip: 10.106.0.3
+      ip: 10.106.0.4
+      access_ip: 10.106.0.4
   children:
     kube-master:
       hosts:
