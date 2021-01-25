@@ -209,7 +209,7 @@ default_kubelet_config_dir: "{{ kube_config_dir }}/dynamic_kubelet_dir"
 dynamic_kubelet_configuration_dir: "{{ kubelet_config_dir | default(default_kubelet_config_dir) }}"
 
 # Aggregator
-kube_api_aggregator_routing: false
+kube_api_aggregator_routing: true
 
 # Profiling
 kube_profiling: false
